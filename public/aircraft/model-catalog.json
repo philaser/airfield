@@ -1,0 +1,536 @@
+{
+  "B77W": {
+    "length": 73.9,
+    "wingspan": 64.8,
+    "credit": "Peter James Lowden / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "bounds": [
+      6.199999999999974,
+      0.2,
+      51.60000000000003,
+      63.60000000000001
+    ]
+  },
+  "B789": {
+    "length": 62.8,
+    "wingspan": 60.1,
+    "credit": "Peter James Lowden / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "bounds": [
+      1.6999999999999846,
+      0.19999999999998447,
+      60.60000000000002,
+      63.69999999999999
+    ]
+  },
+  "B772": {
+    "length": 63.7,
+    "wingspan": 60.9,
+    "credit": "Peter James Lowden / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "bounds": [
+      6.199999999999974,
+      4.3999999999999995,
+      51.60000000000003,
+      55.20000000000001
+    ]
+  },
+  "A35K": {
+    "length": 73.78,
+    "wingspan": 64.75,
+    "credit": "tar1090 / dump1090 contributors",
+    "license": "GPL-2.0-or-later",
+    "bounds": [
+      0.5002934922892657,
+      0.501000000000019,
+      521.1664099126232,
+      537.66
+    ]
+  },
+  "A388": {
+    "length": 73,
+    "wingspan": 79.8,
+    "credit": "tar1090 / dump1090 contributors",
+    "license": "GPL-2.0-or-later",
+    "bounds": [
+      -2.4458841531892204,
+      -1.0044981257809247,
+      30.757256818245434,
+      28.279498125780925
+    ]
+  },
+  "A320": {
+    "length": 37.57,
+    "wingspan": 35.8,
+    "credit": "tar1090 / dump1090 contributors",
+    "license": "GPL-2.0-or-later",
+    "bounds": [
+      0.500335449218734,
+      0.49999999999995115,
+      359.3136645507813,
+      395.76000000000005
+    ]
+  },
+  "A319": {
+    "name": "Airbus A319",
+    "length": 33.84,
+    "wingspan": 35.8,
+    "bounds": [
+      0.5003354492187391,
+      0.49999999999996536,
+      359.30809754805347,
+      352.0000000000001
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a320-family/a319ceo",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A321": {
+    "name": "Airbus A321",
+    "length": 44.51,
+    "wingspan": 35.8,
+    "bounds": [
+      0.5010799645606048,
+      0.5000000000001164,
+      359.3079087887795,
+      463.12999999999994
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a320-family/a321neo",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A21N": {
+    "name": "Airbus A321neo",
+    "length": 44.51,
+    "wingspan": 35.8,
+    "bounds": [
+      0.5010799645606048,
+      0.5000000000001164,
+      359.3079087887795,
+      463.12999999999994
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a320-family/a321neo",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A20N": {
+    "name": "Airbus A320neo",
+    "length": 37.57,
+    "wingspan": 35.8,
+    "bounds": [
+      0.500335449218734,
+      0.49999999999995115,
+      359.3136645507813,
+      395.76000000000005
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a320-family/a320neo",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A332": {
+    "name": "Airbus A330-200",
+    "length": 58.82,
+    "wingspan": 60.3,
+    "bounds": [
+      0.5040000000001115,
+      0.5,
+      1269.45,
+      1252.08
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a330/a330-200",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A333": {
+    "name": "Airbus A330-300",
+    "length": 63.66,
+    "wingspan": 60.3,
+    "bounds": [
+      0.5040000000001115,
+      0.5,
+      1269.45,
+      1252.08
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a330/a330-300",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A339": {
+    "name": "Airbus A330-900",
+    "length": 63.69,
+    "wingspan": 64,
+    "bounds": [
+      0.5040000000001115,
+      0.5,
+      1269.45,
+      1252.08
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a330/a330-900",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "BCS1": {
+    "name": "Airbus A220-100",
+    "length": 35,
+    "wingspan": 35.1,
+    "bounds": [
+      2.369999999999997,
+      1,
+      27.26,
+      30
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a220/a220-100",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "BCS3": {
+    "name": "Airbus A220-300",
+    "length": 38.7,
+    "wingspan": 35.1,
+    "bounds": [
+      2.369999999999997,
+      1,
+      27.26,
+      30
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a220/a220-300",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B737": {
+    "name": "Boeing 737-700",
+    "length": 33.6,
+    "wingspan": 35.8,
+    "bounds": [
+      0.02564346311975679,
+      0.024,
+      70.52992379368928,
+      70.76100000000001
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/Commercial/737ng/737-next-generation-design-highlights",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B738": {
+    "name": "Boeing 737-800",
+    "length": 39.5,
+    "wingspan": 35.8,
+    "bounds": [
+      0.02564346311975679,
+      0.024,
+      70.52892379368929,
+      83.239
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/Commercial/737ng/737-next-generation-design-highlights",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B739": {
+    "name": "Boeing 737-900ER",
+    "length": 42.1,
+    "wingspan": 35.8,
+    "bounds": [
+      0.02564346311975679,
+      0.026,
+      70.52892379368929,
+      88.69500000000001
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/Commercial/737ng/737-next-generation-design-highlights",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B38M": {
+    "name": "Boeing 737 MAX 8",
+    "length": 39.5,
+    "wingspan": 35.9,
+    "bounds": [
+      0.02564346311975679,
+      0.024,
+      70.52892379368929,
+      83.239
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/commercial/737max",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B39M": {
+    "name": "Boeing 737 MAX 9",
+    "length": 42.1,
+    "wingspan": 35.9,
+    "bounds": [
+      0.02564346311975679,
+      0.026,
+      70.52892379368929,
+      88.69500000000001
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/commercial/737max",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B763": {
+    "name": "Boeing 767-300",
+    "length": 54.9,
+    "wingspan": 47.6,
+    "bounds": [
+      7.381,
+      2.0157346190911807,
+      49.62200000000001,
+      57.0552653809088
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/content/dam/boeing/boeingdotcom/company/about_bca/startup/pdf/historical/767_passenger.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B764": {
+    "name": "Boeing 767-400ER",
+    "length": 61.3,
+    "wingspan": 51.9,
+    "bounds": [
+      7.381,
+      2.0157346190911807,
+      49.62200000000001,
+      57.0552653809088
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/content/dam/boeing/boeingdotcom/company/about_bca/startup/pdf/historical/767_passenger.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B788": {
+    "name": "Boeing 787-8",
+    "length": 56.7,
+    "wingspan": 60.1,
+    "bounds": [
+      1.6999999999999846,
+      0.19999999999998447,
+      60.60000000000002,
+      63.69999999999999
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/commercial/787",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B78X": {
+    "name": "Boeing 787-10",
+    "length": 68.3,
+    "wingspan": 60.1,
+    "bounds": [
+      1.6999999999999846,
+      0.19999999999998447,
+      60.60000000000002,
+      63.69999999999999
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/commercial/787",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "E75L": {
+    "name": "Embraer E175 · long wing",
+    "length": 31.68,
+    "wingspan": 28.65,
+    "bounds": [
+      2.369999999999997,
+      1,
+      27.26,
+      30
+    ],
+    "kind": "plane",
+    "source": "https://www.bazl.admin.ch/dam/en/sd-web/54hjzEF8T3Js/9184_p1_cons_en.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "E75S": {
+    "name": "Embraer E175 · short wing",
+    "length": 31.68,
+    "wingspan": 26,
+    "bounds": [
+      2.369999999999997,
+      1,
+      27.26,
+      30
+    ],
+    "kind": "plane",
+    "source": "https://embraer.com/media/5hun3qcb/e175_spec.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "E190": {
+    "name": "Embraer E190",
+    "length": 36.24,
+    "wingspan": 28.72,
+    "bounds": [
+      2.369999999999997,
+      1,
+      27.26,
+      30
+    ],
+    "kind": "plane",
+    "source": "https://www.bazl.admin.ch/dam/en/sd-web/54hjzEF8T3Js/9184_p1_cons_en.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "CRJ2": {
+    "name": "Bombardier CRJ200",
+    "length": 26.77,
+    "wingspan": 21.21,
+    "bounds": [
+      0.26,
+      0.34,
+      17.479999999999997,
+      23.330000000000002
+    ],
+    "kind": "plane",
+    "source": "https://www.mhi.com/business/products-services/aviation/aircraft-aftermarket-service/crj",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "CRJ7": {
+    "name": "Bombardier CRJ700",
+    "length": 32.3,
+    "wingspan": 23.2,
+    "bounds": [
+      0.26,
+      0.34,
+      17.479999999999997,
+      23.330000000000002
+    ],
+    "kind": "plane",
+    "source": "https://www.mhi.com/business/products-services/aviation/aircraft-aftermarket-service/crj",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "CRJ9": {
+    "name": "Bombardier CRJ900",
+    "length": 36.2,
+    "wingspan": 24.9,
+    "bounds": [
+      0.26,
+      0.34,
+      17.479999999999997,
+      23.330000000000002
+    ],
+    "kind": "plane",
+    "source": "https://www.mhi.com/business/products-services/aviation/aircraft-aftermarket-service/crj",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "CRJX": {
+    "name": "Bombardier CRJ1000",
+    "length": 39.1,
+    "wingspan": 26.2,
+    "bounds": [
+      0.26,
+      0.34,
+      17.479999999999997,
+      23.330000000000002
+    ],
+    "kind": "plane",
+    "source": "https://www.mhi.com/business/products-services/aviation/aircraft-aftermarket-service/crj",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "AT76": {
+    "name": "ATR 72-600",
+    "length": 27.17,
+    "wingspan": 27.05,
+    "bounds": [
+      0.27,
+      0.24000000000000016,
+      20.43,
+      19.11
+    ],
+    "kind": "plane",
+    "source": "https://www.bazl.admin.ch/dam/en/sd-web/54hjzEF8T3Js/9184_p1_cons_en.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "DH8D": {
+    "name": "De Havilland Dash 8-400",
+    "length": 32.83,
+    "wingspan": 28.42,
+    "bounds": [
+      0.27,
+      0.24000000000000016,
+      20.43,
+      19.11
+    ],
+    "kind": "plane",
+    "source": "https://www.bazl.admin.ch/dam/en/sd-web/54hjzEF8T3Js/9184_p1_cons_en.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "AS50": {
+    "name": "Airbus AS350 / H125",
+    "length": 12.94,
+    "wingspan": 10.69,
+    "bounds": [
+      0,
+      0,
+      10.69,
+      12.94
+    ],
+    "kind": "helicopter",
+    "source": "https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h125/h125-technical-information",
+    "artwork": "Schematic rotorcraft footprint, using current Airbus variant D-value and rotor diameter; not an airframe drawing"
+  },
+  "EC35": {
+    "name": "Airbus EC135 / H135",
+    "length": 12.26,
+    "wingspan": 10.4,
+    "bounds": [
+      0,
+      0,
+      10.4,
+      12.26
+    ],
+    "kind": "helicopter",
+    "source": "https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h135/h135-technical-information",
+    "artwork": "Schematic rotorcraft footprint, using current Airbus variant D-value and rotor diameter; not an airframe drawing"
+  },
+  "B744": {
+    "name": "Boeing 747-400",
+    "length": 70.7,
+    "wingspan": 64.4,
+    "bounds": [
+      4.87,
+      3.077831504618488,
+      53.59200000000002,
+      58.58316849538153
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/content/dam/boeing/boeingdotcom/company/about_bca/startup/pdf/historical/747-8I_-_passenger.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B748": {
+    "name": "Boeing 747-8",
+    "length": 76.3,
+    "wingspan": 68.4,
+    "bounds": [
+      4.87,
+      3.077831504618488,
+      53.59200000000002,
+      58.58316849538153
+    ],
+    "kind": "plane",
+    "source": "https://www.boeing.com/content/dam/boeing/boeingdotcom/company/about_bca/startup/pdf/historical/747-8I_-_passenger.pdf",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "B752": {
+    "name": "Boeing 757-200",
+    "length": 47.3,
+    "wingspan": 38.1,
+    "bounds": [
+      7.381,
+      2.0157346190911807,
+      49.62200000000001,
+      57.0552653809088
+    ],
+    "kind": "plane",
+    "source": "https://contentzone.eurocontrol.int/aircraftperformance/details.aspx?ICAO=B752",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  },
+  "A359": {
+    "name": "Airbus A350-900",
+    "length": 66.8,
+    "wingspan": 64.75,
+    "bounds": [
+      0.5002934922892657,
+      0.501000000000019,
+      521.1664099126232,
+      537.66
+    ],
+    "kind": "plane",
+    "source": "https://www.aircraft.airbus.com/en/aircraft/a350/a350-900",
+    "artwork": "Simplified family silhouette calibrated to nominal model dimensions"
+  }
+}
