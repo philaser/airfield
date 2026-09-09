@@ -7,6 +7,8 @@ import {useTraffic} from './useTraffic';
 import {createMotionBuffer} from './traffic-motion';
 import {usePresence} from './usePresence';
 import {VehicleMarker} from './VehicleMarker.js';
+import {useMapGestures} from './useMapGestures.js';
+import {mapView} from './map-gestures.js';
 const regions=new Intl.DisplayNames(['en'],{type:'region'});
 import {airportClock} from './airport-time.js';
 function AirportSearch({airports,onSelect}) {
@@ -28,11 +30,12 @@ function AirportMap({airport,features,flights,selected,onSelect,paused,zoom,setZ
  useLayoutEffect(()=>{motion.current.ingest(flights,features);if(!paused)paint();},[flights,features,paused,paint]);
  useEffect(()=>{if(paused||reduceMotion)return;let raf;const frame=()=>{if(!document.hidden)paint();raf=requestAnimationFrame(frame);};raf=requestAnimationFrame(frame);return()=>cancelAnimationFrame(raf);},[paint,paused,reduceMotion]);
  const [viewport,setViewport]=useState({width:1200,height:680});useEffect(()=>{const observer=new ResizeObserver(([entry])=>setViewport({width:entry.contentRect.width,height:entry.contentRect.height}));if(svg.current)observer.observe(svg.current);return()=>observer.disconnect();},[]);const bounds=useMemo(()=>mapBounds(features),[features]);
- const view=[bounds[0]+bounds[2]*(1-1/zoom)/2+pan[0],bounds[1]+bounds[3]*(1-1/zoom)/2+pan[1],bounds[2]/zoom,bounds[3]/zoom];
- const unitsPerPixel=Math.max(bounds[2]/viewport.width,bounds[3]/viewport.height)/zoom;const size=unitsPerPixel*(viewport.width<600?16:20);const [drag,setDrag]=useState(null);
+ const view=mapView(bounds,zoom,pan);
+ const {dragging,...gestures}=useMapGestures({svg,bounds,zoom,pan,setZoom,setPan});
+ const unitsPerPixel=Math.max(bounds[2]/viewport.width,bounds[3]/viewport.height)/zoom;const size=unitsPerPixel*(viewport.width<600?16:20);
  const labels=features.filter(f=>f.tags.aeroway==='terminal'&&(f.tags.ref||f.tags.name)&&f.closed);
  const used=new Set(),placed=[];const uniqueLabels=labels.map(f=>{const raw=f.tags.loc_name||f.tags.ref||f.tags.name;const match=raw.match(/(?:Terminal|^T)\s*(\d+[A-Z]?)/i);return {...f,label:match?'T'+match[1]:raw};}).filter(f=>{if(zoom<2&&!/^T\d/.test(f.label))return false;if(used.has(f.label))return false;const p=[f.points.reduce((n,p)=>n+p[0],0)/f.points.length,f.points.reduce((n,p)=>n+p[1],0)/f.points.length];if(placed.some(q=>Math.abs(q[0]-p[0])<unitsPerPixel*42&&Math.abs(q[1]-p[1])<unitsPerPixel*20))return false;used.add(f.label);placed.push(p);return true;});
- return <svg ref={svg} className={'airport-map '+(drag?'dragging':'')} viewBox={view.join(' ')} aria-label={`Accurate geographic outline of ${airport.name}. Drag to pan. Use the zoom controls to explore.`} onPointerDown={e=>{if(e.target.closest('[data-traffic-id]'))return;const rect=svg.current.getBoundingClientRect();setDrag({x:e.clientX,y:e.clientY,pan:[...pan],scale:Math.max(view[2]/rect.width,view[3]/rect.height)});e.currentTarget.setPointerCapture(e.pointerId);}} onPointerMove={e=>{if(drag)setPan([drag.pan[0]-(e.clientX-drag.x)*drag.scale,drag.pan[1]-(e.clientY-drag.y)*drag.scale]);}} onPointerUp={()=>setDrag(null)} onPointerCancel={()=>setDrag(null)}>
+ return <svg ref={svg} className={'airport-map '+(dragging?'dragging':'')} viewBox={view.join(' ')} aria-label={`Accurate geographic outline of ${airport.name}. Drag to pan. Pinch or use the zoom controls to explore.`} {...gestures}>
  <FeatureLayer features={features}/>
  <g className="night-lights" aria-hidden="true">{features.filter(f=>['runway','taxiway'].includes(f.tags.aeroway)&&!f.closed).map(f=><path key={f.id} className={f.tags.aeroway+'-lights'} d={f.points.map((p,i)=>(i?'L':'M')+p.join(',')).join(' ')} fill="none" vectorEffect="non-scaling-stroke"/>)}</g>
  <g className="map-labels" fontSize={size*.55}>{uniqueLabels.map(f=>{const x=f.points.reduce((n,p)=>n+p[0],0)/f.points.length,y=f.points.reduce((n,p)=>n+p[1],0)/f.points.length;return <text key={f.id} x={x} y={y} textAnchor="middle">{f.label}</text>;})}{features.filter(f=>f.tags.aeroway==='runway'&&!f.closed&&f.tags.ref).map(f=><text key={f.id} x={f.points[0][0]} y={f.points[0][1]-size*.7}>{f.tags.ref}</text>)}</g>

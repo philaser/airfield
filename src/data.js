@@ -48,8 +48,7 @@ export function mapFeatures(data,airport) {
  });
 }
 export function mapBounds(features) {
- const primary=features.filter(f=>['runway','terminal'].includes(f.tags.aeroway));
- const points=(primary.length?primary:features).flatMap(f=>f.points);
+ const points=features.flatMap(f=>f.points);
  if(!points.length)return [-2000,-1200,4000,2400];
  const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);const minX=Math.min(...xs),minY=Math.min(...ys),w=Math.max(500,Math.max(...xs)-minX),h=Math.max(500,Math.max(...ys)-minY);
  return [minX-w*.12,minY-h*.28,w*1.24,h*1.56];

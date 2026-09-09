@@ -4,6 +4,16 @@ import fs from 'node:fs';
 import {searchAirports,mapFeatures,mapBounds,DEFAULT,getGeometry,nearbyGeometry} from '../src/data.js';
 const airports=JSON.parse(fs.readFileSync(new URL('../public/data/airports.json',import.meta.url)));
 const data=JSON.parse(fs.readFileSync(new URL('../public/data/EGLL.json',import.meta.url)));
+test('initial map bounds include the whole airport, including outer aprons and taxiways',()=>{
+ for(const id of ['EGLL','DGAA']){
+  const airport=airports.find(a=>a.id===id);
+  const features=mapFeatures(JSON.parse(fs.readFileSync(new URL(`../public/data/${id}.json`,import.meta.url))),airport);
+  const [x,y,w,h]=mapBounds(features);
+  for(const feature of features)for(const [px,py] of feature.points){
+   assert(px>x&&px<x+w&&py>y&&py<y+h,`${id}: ${feature.tags.aeroway} ${feature.id} must fit with padding`);
+  }
+ }
+});
 test('worldwide search ranks IATA and ICAO exact matches and finds cities',()=>{
  assert.equal(searchAirports(airports,'LHR')[0].id,'EGLL');
  assert.equal(searchAirports(airports,'KJFK')[0].code,'JFK');
