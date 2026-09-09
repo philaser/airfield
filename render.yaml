@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: airfield
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeployTrigger: off
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: AIRFIELD_CONTACT
+        value: https://github.com/philaser/airfield

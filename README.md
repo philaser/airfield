@@ -37,7 +37,14 @@ npm run build
 npm run preview -- --host 127.0.0.1 --port 4174
 ```
 
-Both Vite dev and preview install the traffic middleware. Static files alone cannot fetch live traffic; future hosting must provide this endpoint. The template hosting worker has not been adapted or deployed.
+Both Vite dev and preview install the traffic middleware. The production Node server serves the built app and the same traffic endpoint:
+
+```sh
+npm run build
+npm start
+```
+
+It listens on `0.0.0.0` using `PORT` (default `10000`) and exposes `/healthz`. `render.yaml` defines a free Render web service in Frankfurt with automatic deploys disabled. It uses the public repository URL as `AIRFIELD_CONTACT`; set that variable to another public project contact when deploying a fork. Create the service from the Blueprint in Render, then trigger deploys manually.
 
 Field definitions: [readsb](https://github.com/wiedehopf/readsb/blob/dev/README-json.md). Map sources: [OpenStreetMap](https://www.openstreetmap.org/copyright), [OurAirports](https://ourairports.com/data/). Artwork and dimension credits: `public/aircraft/credits.html`.
 
