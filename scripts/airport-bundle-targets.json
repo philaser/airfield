@@ -1,0 +1,2048 @@
+{
+  "title": "Curated 200 major active airports",
+  "warning": "Curated coverage set, not an exact passenger-traffic ranking. Array order is curation priority, not rank.",
+  "updatedAt": "2026-09-09",
+  "count": 200,
+  "sources": {
+    "aci2025Top20": "https://aci.aero/resources/busiest-airports-in-the-world/",
+    "connectivityBaseline": "https://openflights.org/data.php",
+    "localDirectory": "public/data/airports.json"
+  },
+  "exclusions": {
+    "LTBA": "Passenger hub replaced by LTFM \u0130stanbul Airport.",
+    "SPIM": "Obsolete ICAO for Lima; current SPJC is missing from the bundled directory.",
+    "UKBB": "No current scheduled civil operations while Ukrainian airspace remains closed.",
+    "EBCI": "Secondary-airport baseline entry removed for current global coverage.",
+    "EGGD": "Regional baseline entry removed for current global coverage.",
+    "LIRP": "Regional baseline entry removed for current global coverage.",
+    "LIPE": "Regional baseline entry removed for current global coverage.",
+    "LFRS": "Regional baseline entry removed for current global coverage.",
+    "GCFV": "Leisure baseline entry removed for current global coverage.",
+    "KSFB": "Secondary-airport baseline entry removed for current global coverage.",
+    "LEGE": "Secondary-airport baseline entry removed for current global coverage.",
+    "LIRA": "Secondary-airport baseline entry removed for current global coverage.",
+    "EDFH": "Secondary-airport baseline entry removed for current global coverage.",
+    "EGGP": "Regional baseline entry removed for current global coverage.",
+    "EGNT": "Regional baseline entry removed for current global coverage.",
+    "EGNM": "Regional baseline entry removed for current global coverage.",
+    "EDDV": "Regional baseline entry removed for current global coverage.",
+    "LGRP": "Leisure baseline entry removed for current global coverage.",
+    "ENBR": "Regional baseline entry removed for current global coverage.",
+    "LFBD": "Regional baseline entry removed for current global coverage.",
+    "EHEH": "Regional baseline entry removed for current global coverage.",
+    "GCRR": "Leisure baseline entry removed for current global coverage.",
+    "LFOB": "Secondary-airport baseline entry removed for current global coverage.",
+    "LICC": "Regional baseline entry removed for current global coverage.",
+    "LIRN": "Regional baseline entry removed for current global coverage.",
+    "EGBB": "Regional baseline entry removed for current global coverage."
+  },
+  "icaos": [
+    "KATL",
+    "OMDB",
+    "RJTT",
+    "KDFW",
+    "ZSPD",
+    "KORD",
+    "EGLL",
+    "LTFM",
+    "ZGGG",
+    "KDEN",
+    "VIDP",
+    "RKSI",
+    "KLAX",
+    "LFPG",
+    "ZBAA",
+    "WSSS",
+    "EHAM",
+    "LEMD",
+    "ZGSZ",
+    "WMKK",
+    "EDDF",
+    "EDDM",
+    "UUDD",
+    "KIAH",
+    "EGKK",
+    "LEBL",
+    "KJFK",
+    "LIRF",
+    "EBBR",
+    "EGSS",
+    "KEWR",
+    "EGCC",
+    "CYYZ",
+    "EDDL",
+    "EIDW",
+    "UUEE",
+    "KCLT",
+    "LOWW",
+    "KMIA",
+    "LSZH",
+    "KDTW",
+    "KLAS",
+    "VHHH",
+    "KMSP",
+    "KIAD",
+    "LEPA",
+    "ESSA",
+    "KPHL",
+    "EKCH",
+    "LFPO",
+    "VTBS",
+    "LEMG",
+    "OTHH",
+    "LIMC",
+    "ULLI",
+    "OEJN",
+    "ZUUU",
+    "ENGM",
+    "KSFO",
+    "LGAV",
+    "RJAA",
+    "KBOS",
+    "LPPT",
+    "RCTP",
+    "KMCO",
+    "LSGG",
+    "LTFJ",
+    "KFLL",
+    "CYUL",
+    "LEAL",
+    "ZPPP",
+    "KSEA",
+    "LKPR",
+    "MMMX",
+    "EDDK",
+    "GMMN",
+    "KSLC",
+    "SBGR",
+    "KDCA",
+    "KPHX",
+    "LFMN",
+    "EFHK",
+    "EGPH",
+    "OMAA",
+    "ZUCK",
+    "EDDH",
+    "ZLXY",
+    "EGGW",
+    "GCTS",
+    "YSSY",
+    "LFML",
+    "VABB",
+    "GCLP",
+    "FAOR",
+    "HECA",
+    "EDDS",
+    "MMUN",
+    "LIME",
+    "LLBG",
+    "OERK",
+    "OMSJ",
+    "EPWA",
+    "RPLL",
+    "LFLL",
+    "LHBP",
+    "LMML",
+    "CYVR",
+    "HAAB",
+    "KMDW",
+    "SKBO",
+    "LIPZ",
+    "UUWW",
+    "KBWI",
+    "MPTO",
+    "ZSAM",
+    "ZSHC",
+    "KLGA",
+    "ZGHA",
+    "EDDB",
+    "KTPA",
+    "ZSSS",
+    "EVRA",
+    "LROP",
+    "HKJK",
+    "LFSB",
+    "USSS",
+    "ZHHH",
+    "LTAI",
+    "DAAG",
+    "LPFR",
+    "WIII",
+    "EGPF",
+    "LGIR",
+    "ZYTX",
+    "DTTA",
+    "KSTL",
+    "LPPR",
+    "CYYC",
+    "YBBN",
+    "LEIB",
+    "ZYTL",
+    "KPDX",
+    "ZYHB",
+    "EGNX",
+    "KSAN",
+    "LEVC",
+    "OJAI",
+    "RJBB",
+    "UTTT",
+    "ELLX",
+    "KCLE",
+    "LCLK",
+    "LGTS",
+    "YMML",
+    "ZHCC",
+    "ZWWW",
+    "OOMS",
+    "VVTS",
+    "ZSNJ",
+    "ZSQD",
+    "EPKK",
+    "PHNL",
+    "UNNT",
+    "ZBTJ",
+    "LYBE",
+    "SBKP",
+    "NZAA",
+    "SBGL",
+    "GMMX",
+    "KHOU",
+    "TJSJ",
+    "MDPC",
+    "VTBD",
+    "ZUGY",
+    "EPGD",
+    "ZBAD",
+    "ZUTF",
+    "VOBL",
+    "VOHS",
+    "VOMM",
+    "VECC",
+    "SCEL",
+    "SAEZ",
+    "WADD",
+    "VVNB",
+    "VVDN",
+    "RPVM",
+    "RJFF",
+    "RJOO",
+    "YPPH",
+    "YPAD",
+    "NZCH",
+    "DNMM",
+    "DGAA",
+    "FACT",
+    "OKKK",
+    "OEDF",
+    "KAUS",
+    "KBNA",
+    "KRDU"
+  ],
+  "airports": [
+    {
+      "position": 1,
+      "id": "KATL",
+      "iata": "ATL",
+      "name": "Hartsfield Jackson Atlanta International Airport",
+      "city": "Atlanta",
+      "country": "US",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 2,
+      "id": "OMDB",
+      "iata": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "AE",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 3,
+      "id": "RJTT",
+      "iata": "HND",
+      "name": "Tokyo Haneda International Airport",
+      "city": "Tokyo",
+      "country": "JP",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 4,
+      "id": "KDFW",
+      "iata": "DFW",
+      "name": "Dallas Fort Worth International Airport",
+      "city": "Dallas-Fort Worth",
+      "country": "US",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 5,
+      "id": "ZSPD",
+      "iata": "PVG",
+      "name": "Shanghai Pudong International Airport",
+      "city": "Shanghai (Pudong)",
+      "country": "CN",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 6,
+      "id": "KORD",
+      "iata": "ORD",
+      "name": "Chicago O'Hare International Airport",
+      "city": "Chicago",
+      "country": "US",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 7,
+      "id": "EGLL",
+      "iata": "LHR",
+      "name": "London Heathrow Airport",
+      "city": "London",
+      "country": "GB",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 8,
+      "id": "LTFM",
+      "iata": "IST",
+      "name": "\u0130stanbul Airport",
+      "city": "Istanbul",
+      "country": "TR",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 9,
+      "id": "ZGGG",
+      "iata": "CAN",
+      "name": "Guangzhou Baiyun International Airport",
+      "city": "Guangzhou (Huadu)",
+      "country": "CN",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 10,
+      "id": "KDEN",
+      "iata": "DEN",
+      "name": "Denver International Airport",
+      "city": "Denver",
+      "country": "US",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 11,
+      "id": "VIDP",
+      "iata": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "New Delhi",
+      "country": "IN",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 12,
+      "id": "RKSI",
+      "iata": "ICN",
+      "name": "Incheon International Airport",
+      "city": "Seoul",
+      "country": "KR",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 13,
+      "id": "KLAX",
+      "iata": "LAX",
+      "name": "Los Angeles International Airport",
+      "city": "Los Angeles",
+      "country": "US",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 14,
+      "id": "LFPG",
+      "iata": "CDG",
+      "name": "Charles de Gaulle International Airport",
+      "city": "Paris (Roissy-en-France, Val-d'Oise)",
+      "country": "FR",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 15,
+      "id": "ZBAA",
+      "iata": "PEK",
+      "name": "Beijing Capital International Airport",
+      "city": "Beijing",
+      "country": "CN",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 16,
+      "id": "WSSS",
+      "iata": "SIN",
+      "name": "Singapore Changi Airport",
+      "city": "Singapore",
+      "country": "SG",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 17,
+      "id": "EHAM",
+      "iata": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "NL",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 18,
+      "id": "LEMD",
+      "iata": "MAD",
+      "name": "Adolfo Su\u00e1rez Madrid\u2013Barajas Airport",
+      "city": "Madrid",
+      "country": "ES",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 19,
+      "id": "ZGSZ",
+      "iata": "SZX",
+      "name": "Shenzhen Bao'an International Airport",
+      "city": "Shenzhen",
+      "country": "CN",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 20,
+      "id": "WMKK",
+      "iata": "KUL",
+      "name": "Kuala Lumpur International Airport",
+      "city": "Sepang",
+      "country": "MY",
+      "selectionBasis": "aci-2025-total-passenger-top20"
+    },
+    {
+      "position": 21,
+      "id": "EDDF",
+      "iata": "FRA",
+      "name": "Frankfurt Main Airport",
+      "city": "Frankfurt am Main",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 22,
+      "id": "EDDM",
+      "iata": "MUC",
+      "name": "Munich Airport",
+      "city": "Munich",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 23,
+      "id": "UUDD",
+      "iata": "DME",
+      "name": "Domodedovo International Airport",
+      "city": "Moscow",
+      "country": "RU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 24,
+      "id": "KIAH",
+      "iata": "IAH",
+      "name": "George Bush Intercontinental Airport",
+      "city": "Houston",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 25,
+      "id": "EGKK",
+      "iata": "LGW",
+      "name": "London Gatwick Airport",
+      "city": "London",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 26,
+      "id": "LEBL",
+      "iata": "BCN",
+      "name": "Josep Tarradellas Barcelona-El Prat Airport",
+      "city": "Barcelona",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 27,
+      "id": "KJFK",
+      "iata": "JFK",
+      "name": "John F. Kennedy International Airport",
+      "city": "New York",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 28,
+      "id": "LIRF",
+      "iata": "FCO",
+      "name": "Rome\u2013Fiumicino Leonardo da Vinci International Airport",
+      "city": "Rome",
+      "country": "IT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 29,
+      "id": "EBBR",
+      "iata": "BRU",
+      "name": "Brussels Airport",
+      "city": "Zaventem",
+      "country": "BE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 30,
+      "id": "EGSS",
+      "iata": "STN",
+      "name": "London Stansted Airport",
+      "city": "London, Essex",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 31,
+      "id": "KEWR",
+      "iata": "EWR",
+      "name": "Newark Liberty International Airport",
+      "city": "Newark",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 32,
+      "id": "EGCC",
+      "iata": "MAN",
+      "name": "Manchester Airport",
+      "city": "Manchester, Greater Manchester",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 33,
+      "id": "CYYZ",
+      "iata": "YYZ",
+      "name": "Toronto Pearson International Airport",
+      "city": "Toronto",
+      "country": "CA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 34,
+      "id": "EDDL",
+      "iata": "DUS",
+      "name": "D\u00fcsseldorf Airport",
+      "city": "D\u00fcsseldorf",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 35,
+      "id": "EIDW",
+      "iata": "DUB",
+      "name": "Dublin Airport",
+      "city": "Dublin",
+      "country": "IE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 36,
+      "id": "UUEE",
+      "iata": "SVO",
+      "name": "Sheremetyevo International Airport",
+      "city": "Moscow",
+      "country": "RU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 37,
+      "id": "KCLT",
+      "iata": "CLT",
+      "name": "Charlotte Douglas International Airport",
+      "city": "Charlotte",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 38,
+      "id": "LOWW",
+      "iata": "VIE",
+      "name": "Vienna International Airport",
+      "city": "Vienna",
+      "country": "AT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 39,
+      "id": "KMIA",
+      "iata": "MIA",
+      "name": "Miami International Airport",
+      "city": "Miami",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 40,
+      "id": "LSZH",
+      "iata": "ZRH",
+      "name": "Z\u00fcrich Airport",
+      "city": "Zurich",
+      "country": "CH",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 41,
+      "id": "KDTW",
+      "iata": "DTW",
+      "name": "Detroit Metropolitan Wayne County Airport",
+      "city": "Detroit",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 42,
+      "id": "KLAS",
+      "iata": "LAS",
+      "name": "Harry Reid International Airport",
+      "city": "Las Vegas",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 43,
+      "id": "VHHH",
+      "iata": "HKG",
+      "name": "Hong Kong International Airport",
+      "city": "Hong Kong",
+      "country": "HK",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 44,
+      "id": "KMSP",
+      "iata": "MSP",
+      "name": "Minneapolis\u2013Saint Paul International Airport / Wold\u2013Chamberlain Field",
+      "city": "Minneapolis",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 45,
+      "id": "KIAD",
+      "iata": "IAD",
+      "name": "Washington Dulles International Airport",
+      "city": "Dulles",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 46,
+      "id": "LEPA",
+      "iata": "PMI",
+      "name": "Palma de Mallorca Airport",
+      "city": "Palma de Mallorca",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 47,
+      "id": "ESSA",
+      "iata": "ARN",
+      "name": "Stockholm-Arlanda Airport",
+      "city": "Stockholm",
+      "country": "SE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 48,
+      "id": "KPHL",
+      "iata": "PHL",
+      "name": "Philadelphia International Airport",
+      "city": "Philadelphia",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 49,
+      "id": "EKCH",
+      "iata": "CPH",
+      "name": "Copenhagen Kastrup Airport",
+      "city": "Copenhagen",
+      "country": "DK",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 50,
+      "id": "LFPO",
+      "iata": "ORY",
+      "name": "Paris-Orly Airport",
+      "city": "Paris (Orly, Val-de-Marne)",
+      "country": "FR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 51,
+      "id": "VTBS",
+      "iata": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "TH",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 52,
+      "id": "LEMG",
+      "iata": "AGP",
+      "name": "M\u00e1laga-Costa del Sol Airport",
+      "city": "M\u00e1laga",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 53,
+      "id": "OTHH",
+      "iata": "DOH",
+      "name": "Hamad International Airport",
+      "city": "Doha",
+      "country": "QA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 54,
+      "id": "LIMC",
+      "iata": "MXP",
+      "name": "Milan Malpensa International Airport",
+      "city": "Ferno (VA)",
+      "country": "IT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 55,
+      "id": "ULLI",
+      "iata": "LED",
+      "name": "Pulkovo Airport",
+      "city": "St. Petersburg",
+      "country": "RU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 56,
+      "id": "OEJN",
+      "iata": "JED",
+      "name": "King Abdulaziz International Airport",
+      "city": "Jeddah",
+      "country": "SA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 57,
+      "id": "ZUUU",
+      "iata": "CTU",
+      "name": "Chengdu Shuangliu International Airport",
+      "city": "Chengdu (Shuangliu)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 58,
+      "id": "ENGM",
+      "iata": "OSL",
+      "name": "Oslo-Gardermoen International Airport",
+      "city": "Oslo (Gardermoen)",
+      "country": "NO",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 59,
+      "id": "KSFO",
+      "iata": "SFO",
+      "name": "San Francisco International Airport",
+      "city": "San Francisco",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 60,
+      "id": "LGAV",
+      "iata": "ATH",
+      "name": "Athens Eleftherios Venizelos International Airport",
+      "city": "Spata-Artemida",
+      "country": "GR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 61,
+      "id": "RJAA",
+      "iata": "NRT",
+      "name": "Narita International Airport",
+      "city": "Narita",
+      "country": "JP",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 62,
+      "id": "KBOS",
+      "iata": "BOS",
+      "name": "Boston Logan International Airport",
+      "city": "Boston",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 63,
+      "id": "LPPT",
+      "iata": "LIS",
+      "name": "Lisbon Humberto Delgado Airport",
+      "city": "Lisbon",
+      "country": "PT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 64,
+      "id": "RCTP",
+      "iata": "TPE",
+      "name": "Taiwan Taoyuan International Airport",
+      "city": "Taoyuan",
+      "country": "TW",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 65,
+      "id": "KMCO",
+      "iata": "MCO",
+      "name": "Orlando International Airport",
+      "city": "Orlando",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 66,
+      "id": "LSGG",
+      "iata": "GVA",
+      "name": "Geneva International Airport",
+      "city": "Geneva",
+      "country": "CH",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 67,
+      "id": "LTFJ",
+      "iata": "SAW",
+      "name": "Istanbul Sabiha G\u00f6k\u00e7en International Airport",
+      "city": "Pendik, Istanbul",
+      "country": "TR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 68,
+      "id": "KFLL",
+      "iata": "FLL",
+      "name": "Fort Lauderdale Hollywood International Airport",
+      "city": "Fort Lauderdale",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 69,
+      "id": "CYUL",
+      "iata": "YUL",
+      "name": "Montreal / Pierre Elliott Trudeau International Airport",
+      "city": "Montr\u00e9al",
+      "country": "CA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 70,
+      "id": "LEAL",
+      "iata": "ALC",
+      "name": "Alicante-Elche Miguel Hern\u00e1ndez Airport",
+      "city": "Alicante",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 71,
+      "id": "ZPPP",
+      "iata": "KMG",
+      "name": "Kunming Changshui International Airport",
+      "city": "Kunming",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 72,
+      "id": "KSEA",
+      "iata": "SEA",
+      "name": "Seattle\u2013Tacoma International Airport",
+      "city": "Seattle",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 73,
+      "id": "LKPR",
+      "iata": "PRG",
+      "name": "V\u00e1clav Havel Airport Prague",
+      "city": "Prague",
+      "country": "CZ",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 74,
+      "id": "MMMX",
+      "iata": "MEX",
+      "name": "Mexico City Benito Ju\u00e1rez International Airport",
+      "city": "Mexico City",
+      "country": "MX",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 75,
+      "id": "EDDK",
+      "iata": "CGN",
+      "name": "Cologne Bonn Airport",
+      "city": "K\u00f6ln (Cologne)",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 76,
+      "id": "GMMN",
+      "iata": "CMN",
+      "name": "Mohammed V International Airport",
+      "city": "Casablanca",
+      "country": "MA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 77,
+      "id": "KSLC",
+      "iata": "SLC",
+      "name": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 78,
+      "id": "SBGR",
+      "iata": "GRU",
+      "name": "S\u00e3o Paulo/Guarulhos\u2013Governor Andr\u00e9 Franco Montoro International Airport",
+      "city": "S\u00e3o Paulo",
+      "country": "BR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 79,
+      "id": "KDCA",
+      "iata": "DCA",
+      "name": "Ronald Reagan Washington National Airport",
+      "city": "Washington",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 80,
+      "id": "KPHX",
+      "iata": "PHX",
+      "name": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 81,
+      "id": "LFMN",
+      "iata": "NCE",
+      "name": "Nice-C\u00f4te d'Azur Airport",
+      "city": "Nice, Alpes-Maritimes",
+      "country": "FR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 82,
+      "id": "EFHK",
+      "iata": "HEL",
+      "name": "Helsinki Vantaa Airport",
+      "city": "Helsinki (Vantaa)",
+      "country": "FI",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 83,
+      "id": "EGPH",
+      "iata": "EDI",
+      "name": "Edinburgh Airport",
+      "city": "Ingliston, Edinburgh",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 84,
+      "id": "OMAA",
+      "iata": "AUH",
+      "name": "Zayed International Airport",
+      "city": "Abu Dhabi",
+      "country": "AE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 85,
+      "id": "ZUCK",
+      "iata": "CKG",
+      "name": "Chongqing Jiangbei International Airport",
+      "city": "Chongqing",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 86,
+      "id": "EDDH",
+      "iata": "HAM",
+      "name": "Hamburg Helmut Schmidt Airport",
+      "city": "Hamburg",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 87,
+      "id": "ZLXY",
+      "iata": "XIY",
+      "name": "Xi'an Xianyang International Airport",
+      "city": "Xi'an",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 88,
+      "id": "EGGW",
+      "iata": "LTN",
+      "name": "London Luton Airport",
+      "city": "Luton, Luton",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 89,
+      "id": "GCTS",
+      "iata": "TFS",
+      "name": "Tenerife Sur Airport",
+      "city": "Tenerife",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 90,
+      "id": "YSSY",
+      "iata": "SYD",
+      "name": "Sydney Kingsford Smith International Airport",
+      "city": "Sydney (Mascot)",
+      "country": "AU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 91,
+      "id": "LFML",
+      "iata": "MRS",
+      "name": "Marseille Provence Airport",
+      "city": "Marignane, Bouches-du-Rh\u00f4ne",
+      "country": "FR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 92,
+      "id": "VABB",
+      "iata": "BOM",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "IN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 93,
+      "id": "GCLP",
+      "iata": "LPA",
+      "name": "Gran Canaria Airport",
+      "city": "Gran Canaria Island",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 94,
+      "id": "FAOR",
+      "iata": "JNB",
+      "name": "O.R. Tambo International Airport",
+      "city": "Johannesburg",
+      "country": "ZA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 95,
+      "id": "HECA",
+      "iata": "CAI",
+      "name": "Cairo International Airport",
+      "city": "Cairo",
+      "country": "EG",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 96,
+      "id": "EDDS",
+      "iata": "STR",
+      "name": "Stuttgart Airport",
+      "city": "Stuttgart",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 97,
+      "id": "MMUN",
+      "iata": "CUN",
+      "name": "Canc\u00fan International Airport",
+      "city": "Canc\u00fan",
+      "country": "MX",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 98,
+      "id": "LIME",
+      "iata": "BGY",
+      "name": "Il Caravaggio International Airport",
+      "city": "Orio al Serio (BG)",
+      "country": "IT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 99,
+      "id": "LLBG",
+      "iata": "TLV",
+      "name": "Ben Gurion International Airport",
+      "city": "Tel Aviv",
+      "country": "IL",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 100,
+      "id": "OERK",
+      "iata": "RUH",
+      "name": "King Khalid International Airport",
+      "city": "Riyadh",
+      "country": "SA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 101,
+      "id": "OMSJ",
+      "iata": "SHJ",
+      "name": "Sharjah International Airport",
+      "city": "Sharjah",
+      "country": "AE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 102,
+      "id": "EPWA",
+      "iata": "WAW",
+      "name": "Warsaw Chopin Airport",
+      "city": "Warsaw",
+      "country": "PL",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 103,
+      "id": "RPLL",
+      "iata": "MNL",
+      "name": "Ninoy Aquino International Airport",
+      "city": "Manila (Pasay)",
+      "country": "PH",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 104,
+      "id": "LFLL",
+      "iata": "LYS",
+      "name": "Lyon Saint-Exup\u00e9ry Airport",
+      "city": "Colombier-Saugnieu, Rh\u00f4ne",
+      "country": "FR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 105,
+      "id": "LHBP",
+      "iata": "BUD",
+      "name": "Budapest Liszt Ferenc International Airport",
+      "city": "Budapest",
+      "country": "HU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 106,
+      "id": "LMML",
+      "iata": "MLA",
+      "name": "Malta International Airport",
+      "city": "Valletta",
+      "country": "MT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 107,
+      "id": "CYVR",
+      "iata": "YVR",
+      "name": "Vancouver International Airport",
+      "city": "Vancouver",
+      "country": "CA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 108,
+      "id": "HAAB",
+      "iata": "ADD",
+      "name": "Addis Ababa Bole International Airport",
+      "city": "Addis Ababa",
+      "country": "ET",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 109,
+      "id": "KMDW",
+      "iata": "MDW",
+      "name": "Chicago Midway International Airport",
+      "city": "Chicago",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 110,
+      "id": "SKBO",
+      "iata": "BOG",
+      "name": "El Dorado International Airport",
+      "city": "Bogota",
+      "country": "CO",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 111,
+      "id": "LIPZ",
+      "iata": "VCE",
+      "name": "Venice Marco Polo Airport",
+      "city": "Venezia (VE)",
+      "country": "IT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 112,
+      "id": "UUWW",
+      "iata": "VKO",
+      "name": "Vnukovo International Airport",
+      "city": "Moscow",
+      "country": "RU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 113,
+      "id": "KBWI",
+      "iata": "BWI",
+      "name": "Baltimore/Washington International Thurgood Marshall Airport",
+      "city": "Baltimore",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 114,
+      "id": "MPTO",
+      "iata": "PTY",
+      "name": "Tocumen International Airport",
+      "city": "Tocumen",
+      "country": "PA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 115,
+      "id": "ZSAM",
+      "iata": "XMN",
+      "name": "Xiamen Gaoqi International Airport",
+      "city": "Xiamen",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 116,
+      "id": "ZSHC",
+      "iata": "HGH",
+      "name": "Hangzhou Xiaoshan International Airport",
+      "city": "Hangzhou",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 117,
+      "id": "KLGA",
+      "iata": "LGA",
+      "name": "LaGuardia Airport",
+      "city": "New York",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 118,
+      "id": "ZGHA",
+      "iata": "CSX",
+      "name": "Changsha Huanghua International Airport",
+      "city": "Changsha (Changsha)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 119,
+      "id": "EDDB",
+      "iata": "BER",
+      "name": "Berlin Brandenburg Airport",
+      "city": "Berlin",
+      "country": "DE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 120,
+      "id": "KTPA",
+      "iata": "TPA",
+      "name": "Tampa International Airport",
+      "city": "Tampa",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 121,
+      "id": "ZSSS",
+      "iata": "SHA",
+      "name": "Shanghai Hongqiao International Airport",
+      "city": "Shanghai (Minhang)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 122,
+      "id": "EVRA",
+      "iata": "RIX",
+      "name": "Riga International Airport",
+      "city": "Riga",
+      "country": "LV",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 123,
+      "id": "LROP",
+      "iata": "OTP",
+      "name": "Bucharest Henri Coand\u0103 International Airport",
+      "city": "Otopeni",
+      "country": "RO",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 124,
+      "id": "HKJK",
+      "iata": "NBO",
+      "name": "Jomo Kenyatta International Airport",
+      "city": "Nairobi",
+      "country": "KE",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 125,
+      "id": "LFSB",
+      "iata": "BSL",
+      "name": "EuroAirport Basel\u2013Mulhouse\u2013Freiburg",
+      "city": "B\u00e2le / Mulhouse",
+      "country": "FR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 126,
+      "id": "USSS",
+      "iata": "SVX",
+      "name": "Koltsovo Airport",
+      "city": "Yekaterinburg",
+      "country": "RU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 127,
+      "id": "ZHHH",
+      "iata": "WUH",
+      "name": "Wuhan Tianhe International Airport",
+      "city": "Wuhan (Huangpi)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 128,
+      "id": "LTAI",
+      "iata": "AYT",
+      "name": "Antalya International Airport",
+      "city": "Antalya",
+      "country": "TR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 129,
+      "id": "DAAG",
+      "iata": "ALG",
+      "name": "Houari Boumediene Airport",
+      "city": "Algiers",
+      "country": "DZ",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 130,
+      "id": "LPFR",
+      "iata": "FAO",
+      "name": "Faro - Gago Coutinho International Airport",
+      "city": "Faro",
+      "country": "PT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 131,
+      "id": "WIII",
+      "iata": "CGK",
+      "name": "Soekarno-Hatta International Airport",
+      "city": "Jakarta",
+      "country": "ID",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 132,
+      "id": "EGPF",
+      "iata": "GLA",
+      "name": "Glasgow Airport",
+      "city": "Glasgow",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 133,
+      "id": "LGIR",
+      "iata": "HER",
+      "name": "Heraklion International Nikos Kazantzakis Airport",
+      "city": "Heraklion",
+      "country": "GR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 134,
+      "id": "ZYTX",
+      "iata": "SHE",
+      "name": "Shenyang Taoxian International Airport",
+      "city": "Shenyang",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 135,
+      "id": "DTTA",
+      "iata": "TUN",
+      "name": "Tunis Carthage International Airport",
+      "city": "Tunis",
+      "country": "TN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 136,
+      "id": "KSTL",
+      "iata": "STL",
+      "name": "St. Louis Lambert International Airport",
+      "city": "St Louis",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 137,
+      "id": "LPPR",
+      "iata": "OPO",
+      "name": "Francisco de S\u00e1 Carneiro Airport",
+      "city": "Porto",
+      "country": "PT",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 138,
+      "id": "CYYC",
+      "iata": "YYC",
+      "name": "Calgary International Airport",
+      "city": "Calgary",
+      "country": "CA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 139,
+      "id": "YBBN",
+      "iata": "BNE",
+      "name": "Brisbane International Airport",
+      "city": "Brisbane",
+      "country": "AU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 140,
+      "id": "LEIB",
+      "iata": "IBZ",
+      "name": "Ibiza Airport",
+      "city": "Ibiza (Eivissa)",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 141,
+      "id": "ZYTL",
+      "iata": "DLC",
+      "name": "Dalian Zhoushuizi International Airport",
+      "city": "Dalian (Ganjingzi)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 142,
+      "id": "KPDX",
+      "iata": "PDX",
+      "name": "Portland International Airport",
+      "city": "Portland",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 143,
+      "id": "ZYHB",
+      "iata": "HRB",
+      "name": "Harbin Taiping International Airport",
+      "city": "Harbin",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 144,
+      "id": "EGNX",
+      "iata": "EMA",
+      "name": "East Midlands Airport",
+      "city": "Nottingham, Leicestershire",
+      "country": "GB",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 145,
+      "id": "KSAN",
+      "iata": "SAN",
+      "name": "San Diego International Airport",
+      "city": "San Diego",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 146,
+      "id": "LEVC",
+      "iata": "VLC",
+      "name": "Valencia Airport",
+      "city": "Valencia",
+      "country": "ES",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 147,
+      "id": "OJAI",
+      "iata": "AMM",
+      "name": "Queen Alia International Airport",
+      "city": "Amman",
+      "country": "JO",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 148,
+      "id": "RJBB",
+      "iata": "KIX",
+      "name": "Kansai International Airport",
+      "city": "Osaka",
+      "country": "JP",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 149,
+      "id": "UTTT",
+      "iata": "TAS",
+      "name": "Tashkent International Airport",
+      "city": "Tashkent",
+      "country": "UZ",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 150,
+      "id": "ELLX",
+      "iata": "LUX",
+      "name": "Luxembourg-Findel International Airport",
+      "city": "Luxembourg",
+      "country": "LU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 151,
+      "id": "KCLE",
+      "iata": "CLE",
+      "name": "Cleveland Hopkins International Airport",
+      "city": "Cleveland",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 152,
+      "id": "LCLK",
+      "iata": "LCA",
+      "name": "Larnaca International Airport",
+      "city": "Larnaca",
+      "country": "CY",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 153,
+      "id": "LGTS",
+      "iata": "SKG",
+      "name": "Thessaloniki Macedonia International Airport",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 154,
+      "id": "YMML",
+      "iata": "MEL",
+      "name": "Melbourne Airport",
+      "city": "Melbourne",
+      "country": "AU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 155,
+      "id": "ZHCC",
+      "iata": "CGO",
+      "name": "Zhengzhou Xinzheng International Airport",
+      "city": "Zhengzhou",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 156,
+      "id": "ZWWW",
+      "iata": "URC",
+      "name": "\u00dcr\u00fcmqi Tianshan International Airport",
+      "city": "\u00dcr\u00fcmqi",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 157,
+      "id": "OOMS",
+      "iata": "MCT",
+      "name": "Muscat International Airport",
+      "city": "Muscat/Seeb",
+      "country": "OM",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 158,
+      "id": "VVTS",
+      "iata": "SGN",
+      "name": "Tan Son Nhat International Airport",
+      "city": "Ho Chi Minh City",
+      "country": "VN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 159,
+      "id": "ZSNJ",
+      "iata": "NKG",
+      "name": "Nanjing Lukou International Airport",
+      "city": "Nanjing",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 160,
+      "id": "ZSQD",
+      "iata": "TAO",
+      "name": "Qingdao Jiaodong International Airport",
+      "city": "Qingdao (Jiaozhou)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 161,
+      "id": "EPKK",
+      "iata": "KRK",
+      "name": "Krak\u00f3w John Paul II International Airport",
+      "city": "Balice",
+      "country": "PL",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 162,
+      "id": "PHNL",
+      "iata": "HNL",
+      "name": "Daniel K. Inouye International Airport",
+      "city": "Honolulu, Oahu",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 163,
+      "id": "UNNT",
+      "iata": "OVB",
+      "name": "Novosibirsk Tolmachevo Airport",
+      "city": "Novosibirsk",
+      "country": "RU",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 164,
+      "id": "ZBTJ",
+      "iata": "TSN",
+      "name": "Tianjin Binhai International Airport",
+      "city": "Tianjin",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 165,
+      "id": "LYBE",
+      "iata": "BEG",
+      "name": "Belgrade Nikola Tesla Airport",
+      "city": "Belgrade",
+      "country": "RS",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 166,
+      "id": "SBKP",
+      "iata": "VCP",
+      "name": "Viracopos International Airport",
+      "city": "Campinas",
+      "country": "BR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 167,
+      "id": "NZAA",
+      "iata": "AKL",
+      "name": "Auckland International Airport",
+      "city": "Auckland",
+      "country": "NZ",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 168,
+      "id": "SBGL",
+      "iata": "GIG",
+      "name": "Rio de Janeiro Gale\u00e3o \u2013 Tom Jobim International Airport",
+      "city": "Rio De Janeiro",
+      "country": "BR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 169,
+      "id": "GMMX",
+      "iata": "RAK",
+      "name": "Marrakesh Menara Airport",
+      "city": "Marrakesh",
+      "country": "MA",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 170,
+      "id": "KHOU",
+      "iata": "HOU",
+      "name": "William P. Hobby Airport",
+      "city": "Houston",
+      "country": "US",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 171,
+      "id": "TJSJ",
+      "iata": "SJU",
+      "name": "Luis Munoz Marin International Airport",
+      "city": "San Juan",
+      "country": "PR",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 172,
+      "id": "MDPC",
+      "iata": "PUJ",
+      "name": "Punta Cana International Airport",
+      "city": "Punta Cana",
+      "country": "DO",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 173,
+      "id": "VTBD",
+      "iata": "DMK",
+      "name": "Don Mueang International Airport",
+      "city": "Bangkok",
+      "country": "TH",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 174,
+      "id": "ZUGY",
+      "iata": "KWE",
+      "name": "Guiyang Longdongbao International Airport",
+      "city": "Guiyang (Nanming)",
+      "country": "CN",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 175,
+      "id": "EPGD",
+      "iata": "GDN",
+      "name": "Gda\u0144sk Lech Wa\u0142\u0119sa Airport",
+      "city": "Gda\u0144sk",
+      "country": "PL",
+      "selectionBasis": "openflights-2014-connectivity-baseline"
+    },
+    {
+      "position": 176,
+      "id": "ZBAD",
+      "iata": "PKX",
+      "name": "Beijing Daxing International Airport",
+      "city": "Beijing",
+      "country": "CN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 177,
+      "id": "ZUTF",
+      "iata": "TFU",
+      "name": "Chengdu Tianfu International Airport",
+      "city": "Chengdu (Jianyang)",
+      "country": "CN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 178,
+      "id": "VOBL",
+      "iata": "BLR",
+      "name": "Kempegowda International Airport Bengaluru",
+      "city": "Bengaluru",
+      "country": "IN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 179,
+      "id": "VOHS",
+      "iata": "HYD",
+      "name": "Rajiv Gandhi International Airport",
+      "city": "Hyderabad",
+      "country": "IN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 180,
+      "id": "VOMM",
+      "iata": "MAA",
+      "name": "Chennai International Airport",
+      "city": "Chennai",
+      "country": "IN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 181,
+      "id": "VECC",
+      "iata": "CCU",
+      "name": "Netaji Subhash Chandra Bose International Airport",
+      "city": "Kolkata",
+      "country": "IN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 182,
+      "id": "SCEL",
+      "iata": "SCL",
+      "name": "Comodoro Arturo Merino Ben\u00edtez International Airport",
+      "city": "Santiago",
+      "country": "CL",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 183,
+      "id": "SAEZ",
+      "iata": "EZE",
+      "name": "Ezeiza International Airport - Ministro Pistarini",
+      "city": "Buenos Aires (Ezeiza)",
+      "country": "AR",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 184,
+      "id": "WADD",
+      "iata": "DPS",
+      "name": "Denpasar I Gusti Ngurah Rai International Airport",
+      "city": "Kuta, Badung",
+      "country": "ID",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 185,
+      "id": "VVNB",
+      "iata": "HAN",
+      "name": "Noi Bai International Airport",
+      "city": "Hanoi (Soc Son)",
+      "country": "VN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 186,
+      "id": "VVDN",
+      "iata": "DAD",
+      "name": "Da Nang International Airport",
+      "city": "Da Nang",
+      "country": "VN",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 187,
+      "id": "RPVM",
+      "iata": "CEB",
+      "name": "Mactan Cebu International Airport",
+      "city": "Cebu City/Lapu-Lapu City",
+      "country": "PH",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 188,
+      "id": "RJFF",
+      "iata": "FUK",
+      "name": "Fukuoka Airport",
+      "city": "Fukuoka",
+      "country": "JP",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 189,
+      "id": "RJOO",
+      "iata": "ITM",
+      "name": "Osaka Itami International Airport",
+      "city": "Osaka",
+      "country": "JP",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 190,
+      "id": "YPPH",
+      "iata": "PER",
+      "name": "Perth International Airport",
+      "city": "Perth",
+      "country": "AU",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 191,
+      "id": "YPAD",
+      "iata": "ADL",
+      "name": "Adelaide International Airport",
+      "city": "Adelaide",
+      "country": "AU",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 192,
+      "id": "NZCH",
+      "iata": "CHC",
+      "name": "Christchurch International Airport",
+      "city": "Christchurch",
+      "country": "NZ",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 193,
+      "id": "DNMM",
+      "iata": "LOS",
+      "name": "Murtala Muhammed International Airport",
+      "city": "Lagos",
+      "country": "NG",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 194,
+      "id": "DGAA",
+      "iata": "ACC",
+      "name": "Kotoka International Airport",
+      "city": "Accra",
+      "country": "GH",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 195,
+      "id": "FACT",
+      "iata": "CPT",
+      "name": "Cape Town International Airport",
+      "city": "Cape Town",
+      "country": "ZA",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 196,
+      "id": "OKKK",
+      "iata": "KWI",
+      "name": "Kuwait International Airport",
+      "city": "Kuwait City",
+      "country": "KW",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 197,
+      "id": "OEDF",
+      "iata": "DMM",
+      "name": "King Fahd International Airport",
+      "city": "Ad Dammam",
+      "country": "SA",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 198,
+      "id": "KAUS",
+      "iata": "AUS",
+      "name": "Austin Bergstrom International Airport",
+      "city": "Austin",
+      "country": "US",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 199,
+      "id": "KBNA",
+      "iata": "BNA",
+      "name": "Nashville International Airport",
+      "city": "Nashville",
+      "country": "US",
+      "selectionBasis": "current-major-addition"
+    },
+    {
+      "position": 200,
+      "id": "KRDU",
+      "iata": "RDU",
+      "name": "Raleigh-Durham International Airport",
+      "city": "Raleigh/Durham",
+      "country": "US",
+      "selectionBasis": "current-major-addition"
+    }
+  ],
+  "license": {
+    "mapLayouts": "OpenStreetMap contributors, ODbL 1.0",
+    "connectivityDerivedSelection": "OpenFlights, ODbL 1.0",
+    "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+  }
+}

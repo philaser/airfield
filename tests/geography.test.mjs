@@ -35,7 +35,7 @@ test('longitude wrapping preserves geometry at the date line',()=>{
 test('detailed maps without a runway retain valid apron geometry',async t=>{
  const detail={elements:[{id:17,tags:{aeroway:'apron'},geometry:[{lat:0,lon:0},{lat:0,lon:.001}]}]};
  t.mock.method(globalThis,'fetch',async()=>({ok:true,json:async()=>detail}));
- assert.deepEqual(await getGeometry({id:'TEST-NO-RUNWAY'},new AbortController().signal),detail);
+ assert.deepEqual(await getGeometry({id:'TEST-NO-RUNWAY',lat:0,lon:0},new AbortController().signal),detail);
 });
 test('Old Orchard point-only airport loads its actual runway and hangars',async t=>{
  const airport=airports.find(a=>a.id==='2NK9');
