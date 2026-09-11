@@ -1,23 +1,21 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {BUFFER_MS,createMotionBuffer,canSmooth} from '../src/traffic-motion.js';
 const report=(t,x,angle=90,speed=20)=>({id:'test',observedAt:t,position:{x,y:0,angle},speed,headingKnown:true});
-test('plays a twenty-second delayed measured segment and never extrapolates',()=>{
+test('plays a buffered measured segment and never extrapolates',()=>{
  const b=createMotionBuffer();b.ingest([report(100000,0)]);b.ingest([report(110000,100)]);
- assert.equal(BUFFER_MS,20000);assert.equal(b.sample('test',125000).x,50);assert.equal(b.sample('test',130000).x,100);assert.equal(b.sample('test',999999).x,100);
+ assert.equal(BUFFER_MS,12000);assert.equal(b.sample('test',100000+BUFFER_MS+5000).x,50);assert.equal(b.sample('test',110000+BUFFER_MS).x,100);assert.equal(b.sample('test',999999).x,100);
 });
-test('jittered arrivals keep moving through measured positions without an ingest catch-up jump',()=>{
- const b=createMotionBuffer();b.ingest([report(96000,0)]);
- // The first report is four seconds old; the next poll completes twelve seconds later.
- assert.equal(b.sample('test',111999).x,0);b.ingest([report(108000,120)]);
- assert.equal(b.sample('test',111999).x,0);
- assert.equal(b.sample('test',117000).x,10);assert.equal(b.sample('test',120000).x,40);
- // A later poll takes eleven seconds. Ingesting it must not change this frame's position.
- const before=b.sample('test',123000).x;b.ingest([report(119000,230)]);const after=b.sample('test',123000).x;
- assert.equal(before,70);assert.equal(after,before);assert.equal(b.sample('test',130000).x,140);
+test('three-second reports arriving about three seconds old move smoothly without an ingest jump',()=>{
+ const b=createMotionBuffer();b.ingest([report(97000,0)]);
+ const secondArrival=103000,beforeSecond=b.sample('test',secondArrival).x;b.ingest([report(100000,30)]);const afterSecond=b.sample('test',secondArrival).x;
+ assert.equal(beforeSecond,0);assert.equal(afterSecond,beforeSecond);
+ const thirdArrival=106000,beforeThird=b.sample('test',thirdArrival).x;b.ingest([report(103000,60)]);const afterThird=b.sample('test',thirdArrival).x;
+ assert.equal(beforeThird,0);assert.equal(afterThird,beforeThird);
+ assert.equal(b.sample('test',98500+BUFFER_MS).x,15);assert.equal(b.sample('test',101500+BUFFER_MS).x,45);assert.equal(b.sample('test',103000+BUFFER_MS).x,60);
 });
 test('stale gaps, unknown headings, sharp turns, and teleports are not interpolated',()=>{
  for(const f of [report(140000,100),{...report(110000,100),headingKnown:false},report(110000,100,180),report(110000,3000)]){
-  const b=createMotionBuffer();b.ingest([report(100000,0)]);b.ingest([f]);assert.equal(b.sample('test',125000).x,0);
+  const b=createMotionBuffer();b.ingest([report(100000,0)]);b.ingest([f]);assert.equal(b.sample('test',100000+BUFFER_MS+5000).x,0);
  }
 });
 test('does not smooth a shortcut across a terminal',()=>{
@@ -26,8 +24,8 @@ test('does not smooth a shortcut across a terminal',()=>{
 });
 test('stationary noise does not create movement; reports are deduplicated and removed tracks expire',()=>{
  const b=createMotionBuffer();b.ingest([report(100000,0,0,0)]);b.ingest([report(110000,3,0,0)]);b.ingest([report(110000,500,0,0)]);
- assert.equal(b.sample('test',130000).x,0);b.ingest([]);assert.equal(b.sample('test',140000),null);
+ assert.equal(b.sample('test',110000+BUFFER_MS).x,0);b.ingest([]);assert.equal(b.sample('test',140000),null);
 });
 test('heading interpolation follows the shortest turn through north',()=>{
- const b=createMotionBuffer();b.ingest([report(100000,0,355)]);b.ingest([report(110000,50,5)]);assert.equal(b.sample('test',125000).angle,360);
+ const b=createMotionBuffer();b.ingest([report(100000,0,355)]);b.ingest([report(110000,50,5)]);assert.equal(b.sample('test',100000+BUFFER_MS+5000).angle,360);
 });

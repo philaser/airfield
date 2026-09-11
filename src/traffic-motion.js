@@ -1,6 +1,6 @@
-// Reports arrive about every 10s, already a few seconds old. Keep the playhead
-// behind both delays so it does not reach a report, stall, then jump on ingest.
-export const BUFFER_MS=20000;
+// Alternating feeds are polled every 3s; observed reports can already be ~8s old.
+// Leave room for both delays without extrapolating missing positions.
+export const BUFFER_MS=12000;
 const angularDelta=(a,b)=>((b-a+540)%360)-180;
 function intersects(a,b,c,d){
  const cross=(p,q,r)=>(q.x-p.x)*(r.y-p.y)-(q.y-p.y)*(r.x-p.x);
